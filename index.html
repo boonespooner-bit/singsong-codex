@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing Song Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>🎙️ Sing Song</h1>
+      <div id="auth-bar"></div>
+    </header>
+
+    <main>
+      <section id="home-view" class="view active"></section>
+      <section id="song-view" class="view"></section>
+    </main>
+
+    <template id="song-card-template">
+      <article class="song-card">
+        <div>
+          <input class="song-title-input" />
+          <p class="song-meta"></p>
+        </div>
+        <div class="song-actions">
+          <button class="play-song-btn">Play</button>
+          <button class="open-song-btn">Open</button>
+          <button class="download-song-btn">Download Mix</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

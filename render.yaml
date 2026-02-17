@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: singsong-codex
+    env: static
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
