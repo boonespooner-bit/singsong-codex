@@ -31,3 +31,8 @@ Then open `http://localhost:4173`.
 
 ## OAuth note
 The Google login button currently uses a local demo auth flow and includes a hook message to wire Storyteller OAuth credentials in production.
+
+
+## Render deployment
+- Deploy with the included `render.yaml` Blueprint.
+- This app is fully static and does not need SPA rewrite routes; rewriting `/*` can break loading of `styles.css` and `app.js`.
